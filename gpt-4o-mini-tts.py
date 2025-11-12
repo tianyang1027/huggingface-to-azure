@@ -1,9 +1,10 @@
+import os
 import requests
 import json
 
 # 替换为你的 Azure OpenAI 资源信息
-endpoint = "https://v-mandyyu-9920-resource.cognitiveservices.azure.com"
-api_key = "7eafiEoYNCJKrK1z86H4vd9h2Sx8rP8a1Wm1lJSQDi1uFzIsXImFJQQJ99BIACHYHv6XJ3w3AAAAACOGoLbG"
+endpoint =  os.getenv("AZURE_OPENAI_APIKEY")
+api_key = s.getenv("AZURE_OPENAI_ENDPOINT")
 deployment = "gpt-4o-mini-tts"
 api_version = "2025-03-01-preview"
 
